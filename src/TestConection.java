@@ -14,9 +14,12 @@ public class TestConection {
         System.out.println("Conexão efetuada com Sucesso!");
 
         Statement statement = connection.createStatement();
+
+        System.out.println("Criando database .....");
         statement.execute("CREATE DATABASE IF NOT EXISTS curso_java");
 
         System.out.println("Banco criado com sucesso!");
+        System.out.println("Conexão encerrada!!!");
         connection.close();
     }
 }
